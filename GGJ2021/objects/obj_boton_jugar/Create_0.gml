@@ -1,7 +1,7 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
 
-randomize()
-display_set_gui_size(512,288)
+// Inherit the parent event
+event_inherited();
 
-
+txt = "Jugar"

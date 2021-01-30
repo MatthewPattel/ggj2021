@@ -3,7 +3,7 @@
 player = 1
 
 // Inputs
-input = new inputPlayer(d_arrows);
+input = new inputPlayer(d_wasd);
 
 vel = 5;
 velh = 0;

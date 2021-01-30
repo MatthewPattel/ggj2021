@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "spr_boton1",
-    "path": "sprites/spr_boton1/spr_boton1.yy",
+    "name": "spr_solido",
+    "path": "sprites/spr_solido/spr_solido.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -20,10 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_boton1","path":"objects/obj_boton1/obj_boton1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_boton1","path":"objects/obj_boton1/obj_boton1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -31,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_boton1",
+  "name": "obj_solido",
   "tags": [],
   "resourceType": "GMObject",
 }
