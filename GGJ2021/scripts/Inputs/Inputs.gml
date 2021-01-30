@@ -1,8 +1,7 @@
 // Los recursos de Script han cambiado para la v2.3.0 Consulta
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para más información
 
-#macro d_arrows 1
-#macro d_wasd 2
+
 
 function inputPlayer(_device) constructor {
 	device = _device;

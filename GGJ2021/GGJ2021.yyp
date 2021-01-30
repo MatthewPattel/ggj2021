@@ -1,7 +1,7 @@
 {
   "resources": [
     {"id":{"name":"Inputs","path":"scripts/Inputs/Inputs.yy",},"order":0,},
-    {"id":{"name":"Items","path":"scripts/Items/Items.yy",},"order":1,},
+    {"id":{"name":"Constantes","path":"scripts/Constantes/Constantes.yy",},"order":1,},
     {"id":{"name":"fnt_basic","path":"fonts/fnt_basic/fnt_basic.yy",},"order":0,},
     {"id":{"name":"ojb_item","path":"objects/ojb_item/ojb_item.yy",},"order":1,},
     {"id":{"name":"spr_mapa","path":"sprites/spr_mapa/spr_mapa.yy",},"order":1,},
