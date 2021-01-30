@@ -1,6 +1,9 @@
 {
   "resources": [
+    {"id":{"name":"Imputs","path":"scripts/Imputs/Imputs.yy",},"order":0,},
+    {"id":{"name":"Items","path":"scripts/Items/Items.yy",},"order":1,},
     {"id":{"name":"fnt_basic","path":"fonts/fnt_basic/fnt_basic.yy",},"order":0,},
+    {"id":{"name":"ojb_item","path":"objects/ojb_item/ojb_item.yy",},"order":1,},
     {"id":{"name":"spr_players","path":"sprites/spr_players/spr_players.yy",},"order":1,},
     {"id":{"name":"spr_items","path":"sprites/spr_items/spr_items.yy",},"order":0,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
