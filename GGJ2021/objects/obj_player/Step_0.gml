@@ -1,8 +1,15 @@
-  /// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
+  /// @description Movimiento
  
- imput.actualizar()
- velv=imput.vertical*velocidad
- velh=imput.horizontal*velocidad
- x+=velh
- y+=velv
+ // Actualizar inputs
+ input.actualizar();
+ 
+ // Obtener direccion y velocidad
+ var dir = point_direction(0, 0, input.horizontal, input.vertical);
+ var dist = point_distance(0, 0, input.horizontal, input.vertical);
+ velh = lengthdir_x(dist*vel, dir);
+ velv = lengthdir_y(dist*vel, dir);
+ 
+ // Mover player
+ x += velh
+ y += velv
+ 

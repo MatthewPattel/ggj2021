@@ -1,10 +1,10 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
+/// @description Variables
 
-//imput
-imput=new imputPlayer(d_arrows)
-velocidad=5
-velh=0
-velv=0
+// Inputs
+input = new inputPlayer(d_arrows);
 
-mapa=ds_grid_create(3,3)
+vel = 5;
+velh = 0;
+velv = 0;
+
+mapa = ds_grid_create(3, 3);
