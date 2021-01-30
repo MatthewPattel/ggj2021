@@ -4,6 +4,10 @@
 global.lista_items=ds_list_create();
 ds_list_add(global.lista_items, 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);
 
+#macro item_noEsta 0
+#macro item_siEsta 1
+#macro item_encontrado 2
+
 #macro i_moneda 0
 #macro i_perla 1
 #macro i_anillo 2

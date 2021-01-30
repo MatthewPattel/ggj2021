@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (other.mapaItemEnMapa(item)) {
-	other.mapaActualizar(spr_items);
+if (other.mapaItemEnMapa(image_index) == item_siEsta) {
+	other.mapaActualizar(image_index);
 	
 	instance_destroy();
 }
