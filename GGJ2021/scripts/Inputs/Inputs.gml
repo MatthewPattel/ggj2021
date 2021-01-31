@@ -31,6 +31,6 @@ function inputPlayer(_device) constructor {
 		}
 		horizontal = derecha - izquierda;
 		vertical = abajo - arriba;
-		mover = horizontal or vertical;
+		mover = (abs(horizontal) or abs(vertical));
 	}
 }

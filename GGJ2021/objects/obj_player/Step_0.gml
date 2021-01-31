@@ -10,16 +10,21 @@
  velv = lengthdir_y(dist*vel, dir);
  
  //Colision
- if(place_meeting(x+velh, y, obj_solido)){
- velh = 0
+ if (place_meeting(x+velh, y, obj_solido)) {
+	var inc = sign(velh);
+	while (!place_meeting(x+inc, y, obj_solido)) x+= inc;
+	velh = 0;
  }
  
- if(place_meeting(x, y+velv, obj_solido)){
- velv = 0
+ if (place_meeting(x, y+velv, obj_solido)) {
+	var inc = sign(velv);
+	while (!place_meeting(x, y+inc, obj_solido)) y+= inc;
+	velv = 0;
  }
  
  // Mover player
- x += velh
- y += velv
+ x += velh;
+ y += velv;
  
-
+ playerAnimacion();
+ 

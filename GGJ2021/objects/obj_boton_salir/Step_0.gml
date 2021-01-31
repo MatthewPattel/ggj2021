@@ -1,10 +1,10 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
+/// @description Hacer accion
 
 // Inherit the parent event
 event_inherited();
 
-if(accion){
-accion = false
-game_end()
+if (accion) {
+	accion = false;
+	
+	game_end();
 }

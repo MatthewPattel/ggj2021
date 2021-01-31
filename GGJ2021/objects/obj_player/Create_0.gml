@@ -1,15 +1,51 @@
 /// @description Variables
 
+image_speed = 0.5;
+
 player = 1
 
 // Inputs
 input = new inputPlayer(d_wasd);
 
-vel = 5;
+vel = 2;
 velh = 0;
 velv = 0;
 
 mapa = ds_grid_create(3, 3);
+
+spriteIdle = spr_pirate_red_idle;
+spriteRun = spr_pirate_red_run;
+
+playerAnimacion = function() {
+	var dir = sign(input.horizontal);
+	if (dir != 0) {
+		image_xscale = dir;
+	}
+	
+	if (input.mover) {
+		sprite_index = spriteRun;
+	} else {
+		sprite_index = spriteIdle;
+	}
+}
+
+playerActualizar = function(num) {
+	input.device = num;
+	player = num;
+	
+	switch(num) {
+		case d_wasd:
+			spriteIdle = spr_pirate_red_idle;
+			spriteRun = spr_pirate_red_run;
+		break;
+		case d_arrows:
+			spriteIdle = spr_pirate_blue_idle;
+			spriteRun = spr_pirate_blue_run;
+		break;
+	}
+	
+	mapaRellenar();
+}
 
 mapaItemEnMapa = function(item) {
 	var itemEnMapa = item_noEsta

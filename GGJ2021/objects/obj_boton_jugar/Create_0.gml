@@ -1,7 +1,6 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
+/// @description Variables
 
 // Inherit the parent event
 event_inherited();
 
-txt = "Jugar"
+texto = "Jugar";

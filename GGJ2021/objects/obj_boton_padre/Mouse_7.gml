@@ -1,5 +1,3 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
+/// @description Accion true
 
-if(image_index = 1){accion = true}
-
+if (image_index = 1) accion = true;

@@ -30,5 +30,5 @@ ds_list_add(global.lista_items, 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);
 #macro i_everde 16
 
 //movimiento
-#macro d_arrows 1
-#macro d_wasd 2
+#macro d_wasd 1
+#macro d_arrows 2

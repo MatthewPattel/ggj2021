@@ -1,13 +1,9 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
+/// @description Crear players
 
-if(room != Room_menu){
-var p = instance_create_layer(room_width/2, room_height/2, "Players", obj_player)
-p.mapaRellenar()
-var p = instance_create_layer(room_width/2, room_height/2, "Players", obj_player)
-p.input.device = d_arrows
-p.image_blend = c_red
-p.mapaRellenar()
-p.player = 2
+if (room == rom_nivel) {
+	var p1 = createPlayer(room_width/2, room_height/2, d_wasd);
+	var p2 = createPlayer(room_width/2, room_height/2, d_arrows);
+	
+	camera_set_view_target(view_camera[0], p1);
+	camera_set_view_target(view_camera[1], p2);
 }
-
