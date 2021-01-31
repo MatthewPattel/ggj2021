@@ -7,6 +7,7 @@
     {"id":{"name":"Constantes","path":"scripts/Constantes/Constantes.yy",},"order":1,},
     {"id":{"name":"tile_arena","path":"tilesets/tile_arena/tile_arena.yy",},"order":0,},
     {"id":{"name":"spr_arena","path":"sprites/spr_arena/spr_arena.yy",},"order":13,},
+    {"id":{"name":"palette","path":"sprites/palette/palette.yy",},"order":13,},
     {"id":{"name":"obj_boton_salir","path":"objects/obj_boton_salir/obj_boton_salir.yy",},"order":5,},
     {"id":{"name":"BunchOfColors_core","path":"scripts/BunchOfColors_core/BunchOfColors_core.yy",},"order":1,},
     {"id":{"name":"spr_tacha","path":"sprites/spr_tacha/spr_tacha.yy",},"order":3,},
