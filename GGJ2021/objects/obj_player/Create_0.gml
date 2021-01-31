@@ -19,6 +19,10 @@ mapa = ds_grid_create(3, 3);
 spriteQuieto = spr_pirata_rojo_quieto;
 spriteCorrer = spr_pirata_rojo_correr;
 
+playerDibujarRobo = function() {
+	
+}
+
 playerRobar = function(pid) {
 var robo = false
 
