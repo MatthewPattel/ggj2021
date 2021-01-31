@@ -3,6 +3,9 @@
 if (room == rom_nivel) {
 	with(obj_player) {
 		var xs = (player = 1) ? 0 : other.gui_width/2
+		
+		draw_sprite(spr_gui_border, 0, xs, 0);
+		
 		var xi = xs+16
 		var yi = other.gui_height-48
 		
