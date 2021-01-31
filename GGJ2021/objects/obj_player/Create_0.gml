@@ -10,7 +10,7 @@ camy = y;
 // Inputs
 input = new inputPlayer(d_wasd);
 
-vel = 2;
+vel = 1;
 velh = 0;
 velv = 0;
 
