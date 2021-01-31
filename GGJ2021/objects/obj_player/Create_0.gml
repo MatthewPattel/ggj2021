@@ -3,6 +3,9 @@
 image_speed = 0.5;
 
 player = 1
+camera = view_camera[0];
+camx = x;
+camy = y;
 
 // Inputs
 input = new inputPlayer(d_wasd);
@@ -13,8 +16,22 @@ velv = 0;
 
 mapa = ds_grid_create(3, 3);
 
-spriteIdle = spr_pirate_red_idle;
-spriteRun = spr_pirate_red_run;
+spriteQuieto = spr_pirata_rojo_quieto;
+spriteCorrer = spr_pirata_rojo_correr;
+
+playerCameraMove = function() {
+	static xc = camera_get_view_width(camera)/2;
+	static yc = camera_get_view_height(camera)/2;
+	static vv = 25;
+	camx += (x - camx) / vv;
+	camy += (y - camy) / vv;
+	
+	camera_set_view_pos(camera, camx-xc, camy-yc);
+}
+
+playerGano = function() {
+	global.juego_ganador = id;
+}
 
 playerAnimacion = function() {
 	var dir = sign(input.horizontal);
@@ -22,25 +39,26 @@ playerAnimacion = function() {
 		image_xscale = dir;
 	}
 	
-	if (input.mover) {
-		sprite_index = spriteRun;
+	if ((input.mover) and (is_undefined(global.juego_ganador))) {
+		sprite_index = spriteCorrer;
 	} else {
-		sprite_index = spriteIdle;
+		sprite_index = spriteQuieto;
 	}
 }
 
-playerActualizar = function(num) {
+playerActualizar = function(num, cam) {
+	camera = cam;
 	input.device = num;
 	player = num;
 	
 	switch(num) {
 		case d_wasd:
-			spriteIdle = spr_pirate_red_idle;
-			spriteRun = spr_pirate_red_run;
+			spriteQuieto= spr_pirata_rojo_quieto;
+			spriteCorrer = spr_pirata_rojo_correr;
 		break;
 		case d_arrows:
-			spriteIdle = spr_pirate_blue_idle;
-			spriteRun = spr_pirate_blue_run;
+			spriteQuieto = spr_pirata_azul_quieto;
+			spriteCorrer = spr_pirata_azul_correr;
 		break;
 	}
 	
@@ -69,6 +87,43 @@ mapaActualizar = function(item) {
 				mapa[# xx, yy].encontrado = true
 			}
 		}
+	}
+	
+	// Checar si tiene gato
+	var gano = false;
+	
+	//Checar filas
+	for (var yy = 0 ; yy < 3 ; yy++) {
+		if ((mapa[# 0, yy].encontrado) and
+			(mapa[# 1, yy].encontrado) and
+			(mapa[# 2, yy].encontrado)) {
+				gano = true;
+		}
+	}
+	
+	//Checar columnas
+	for (var xx = 0 ; xx < 3 ; xx++) {
+		if ((mapa[# xx, 0].encontrado) and
+			(mapa[# xx, 1].encontrado) and
+			(mapa[# xx, 2].encontrado)) {
+				gano = true;
+		}
+	}
+	
+	// Checar inclinado
+	if ((mapa[# 0, 0].encontrado) and
+		(mapa[# 1, 1].encontrado) and
+		(mapa[# 2, 2].encontrado)) {
+			gano = true;
+	}
+	if ((mapa[# 0, 2].encontrado) and
+		(mapa[# 1, 1].encontrado) and
+		(mapa[# 2, 0].encontrado)) {
+			gano = true;
+	}
+	
+	if (gano) {
+		playerGano();
 	}
 }
 

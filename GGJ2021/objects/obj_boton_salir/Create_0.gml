@@ -3,4 +3,8 @@
 // Inherit the parent event
 event_inherited();
 
-texto = "Salir";
+texto = "SALIR";
+
+botonAccion = function() {	
+	game_end();
+}

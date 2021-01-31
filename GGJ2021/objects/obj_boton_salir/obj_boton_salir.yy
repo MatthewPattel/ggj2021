@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_boton1",
-    "path": "sprites/spr_boton1/spr_boton1.yy",
+    "name": "spr_boton",
+    "path": "sprites/spr_boton/spr_boton.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,7 +25,6 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_boton_salir","path":"objects/obj_boton_salir/obj_boton_salir.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_boton_salir","path":"objects/obj_boton_salir/obj_boton_salir.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

@@ -1,5 +1,7 @@
 /// @description Variables
 
+global.juego_ganador = undefined;
+
 randomize();
 
 gui_width = 384;
@@ -9,7 +11,7 @@ display_set_gui_size(gui_width, gui_height);
 
 createPlayer = function(xx, yy, num) {
 	var p = instance_create_layer(xx, yy, "Players", obj_player);
-	p.playerActualizar(num);
+	p.playerActualizar(num, view_camera[num-1]);
 	
 	return p;
 }

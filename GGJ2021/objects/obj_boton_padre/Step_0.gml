@@ -6,4 +6,8 @@ if (((mouse_x >= bbox_left) and (mouse_x <= bbox_right)) and
 } else {
 	image_index=0;
 }
-	
+
+if (accion) {
+	accion = false;
+	botonAccion();
+}

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_pirate_red_idle",
-    "path": "sprites/spr_pirate_red_idle/spr_pirate_red_idle.yy",
+    "name": "spr_pirata_rojo_quieto",
+    "path": "sprites/spr_pirata_rojo_quieto/spr_pirata_rojo_quieto.yy",
   },
   "solid": false,
   "visible": true,

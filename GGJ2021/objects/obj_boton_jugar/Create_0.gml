@@ -3,4 +3,8 @@
 // Inherit the parent event
 event_inherited();
 
-texto = "Jugar";
+texto = "JUGAR";
+
+botonAccion = function() {	
+	room_goto(rom_nivel);
+}
