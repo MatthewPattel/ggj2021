@@ -19,6 +19,36 @@ mapa = ds_grid_create(3, 3);
 spriteQuieto = spr_pirata_rojo_quieto;
 spriteCorrer = spr_pirata_rojo_correr;
 
+playerRobar = function(pid) {
+var robo = false
+
+
+for (var yy = 0 ; yy < 3 ; yy++) {
+		for (var xx = 0 ; xx < 3 ; xx++) {
+			if (!mapa[# xx, yy].robado){
+			if(robo = false){
+			
+			var sp = mapa[# xx, yy].sprite;
+			var se = mapa[# xx, yy].encontrado
+			
+			if (!se){
+			
+			if (pid.mapaItemEnMapa(sp) = item_encontrado){
+			mapaActualizar(sp)
+			pid.mapaBorrar(sp)
+			var se = mapa[# xx, yy].robado = true
+			robo = true
+			}
+			}
+			}
+			}
+			
+		}
+	}
+
+}
+
+
 playerCameraMove = function() {
 	static xc = camera_get_view_width(camera)/2;
 	static yc = camera_get_view_height(camera)/2;
@@ -142,10 +172,24 @@ mapaRellenar= function() {
 			
 			mapa[# xx, yy] = {
 				sprite : lista[| s],
-				encontrado : false
+				encontrado : false,
+				robado : false
 			}
 			s++;
 		}
 	}
 	ds_list_destroy(lista);
+}
+
+
+mapaBorrar = function(item) {
+	for (var yy = 0 ; yy < 3 ; yy++) {
+		for (var xx = 0 ; xx < 3 ; xx++) {
+			if(mapa[# xx, yy].sprite == item){
+				mapa[# xx, yy].encontrado = false
+				mapa[# xx, yy].robado = true
+			}
+		}
+	}
+	audio_play_sound(sfx_robar, 1000, 0)
 }

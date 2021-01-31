@@ -5,4 +5,5 @@ if (other.mapaItemEnMapa(image_index) == item_siEsta) {
 	other.mapaActualizar(image_index);
 	
 	instance_destroy();
+	audio_play_sound(sfx_tesoro,1000, 0)
 }

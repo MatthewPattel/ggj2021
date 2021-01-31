@@ -7,8 +7,8 @@
   "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "ag_juego",
-    "path": "audiogroups/ag_juego",
+    "name": "ag_efectos",
+    "path": "audiogroups/ag_efectos",
   },
   "soundFile": "sfx_robar.ogg",
   "duration": 0.64602,
