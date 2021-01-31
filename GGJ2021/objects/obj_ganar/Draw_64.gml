@@ -10,5 +10,9 @@ if(!is_undefined(global.juego_ganador)){
 	var xx = xs+(guiw*0.25);
 	var yy = display_get_gui_height()*0.2;
 	
-	draw_sprite(spr_ganar, 0, xx, yy);
+	image_xscale = do_wave(0.5, 1.1, 1)
+	image_yscale = do_wave(0.5, 1.1, 1)
+	draw_sprite_ext(spr_ganar, 0, xx, yy, 
+	image_xscale, image_yscale, 0, white, 1)
 }
+
