@@ -4,6 +4,9 @@
 global.lista_items=ds_list_create();
 ds_list_add(global.lista_items, 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);
 
+global.lista_items_juego = ds_list_create();
+
+
 #macro item_noEsta 0
 #macro item_siEsta 1
 #macro item_encontrado 2

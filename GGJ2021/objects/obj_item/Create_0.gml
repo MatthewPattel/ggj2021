@@ -1,7 +1,8 @@
 /// @description Variables
 
-var sz = ds_list_size(global.lista_items);
-image_index = irandom_range(0, sz-1);
+
+image_index = global.lista_items_juego[| 0];
+ds_list_delete(global.lista_items_juego, 0);
 
 image_speed = 0;
 image_alpha = 0;
@@ -12,3 +13,5 @@ imin = 80;
 imax = 120;
 
 alarm[0] = irandom_range(imin, imax);
+
+depth = -y;

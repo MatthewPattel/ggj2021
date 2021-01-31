@@ -33,7 +33,9 @@ if (place_meeting(x, y+velv, obj_solido)) {
 // Mover player
 x += velh;
 y += velv;
- 
+
+depth = -y;
+
 playerCameraMove();
 
 playerAnimacion();

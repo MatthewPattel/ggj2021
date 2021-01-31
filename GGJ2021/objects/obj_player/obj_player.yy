@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_pirata_hitbox",
+    "path": "sprites/spr_pirata_hitbox/spr_pirata_hitbox.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

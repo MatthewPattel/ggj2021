@@ -1,5 +1,5 @@
 {
-  "bboxMode": 0,
+  "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
   "origin": 9,
@@ -7,9 +7,9 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 5,
+  "bbox_left": 10,
   "bbox_right": 22,
-  "bbox_top": 6,
+  "bbox_top": 20,
   "bbox_bottom": 30,
   "HTile": false,
   "VTile": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"106be474-c575-4473-8981-c034fc3325d9","path":"sprites/spr_pirata_azul_quieto/spr_pirata_azul_quieto.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"106be474-c575-4473-8981-c034fc3325d9","path":"sprites/spr_pirata_azul_quieto/spr_pirata_azul_quieto.yy",},"LayerId":{"name":"0be33509-9a0d-4021-ae36-f7aab88eb62f","path":"sprites/spr_pirata_azul_quieto/spr_pirata_azul_quieto.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pirata_azul_quieto","path":"sprites/spr_pirata_azul_quieto/spr_pirata_azul_quieto.yy",},"resourceVersion":"1.0","name":"106be474-c575-4473-8981-c034fc3325d9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"bdc08417-fb86-42e8-b866-2800801ab230","path":"sprites/spr_pirata_hitbox/spr_pirata_hitbox.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"bdc08417-fb86-42e8-b866-2800801ab230","path":"sprites/spr_pirata_hitbox/spr_pirata_hitbox.yy",},"LayerId":{"name":"2cc2a946-0ce5-490a-9f37-9247862ee5ed","path":"sprites/spr_pirata_hitbox/spr_pirata_hitbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_pirata_hitbox","path":"sprites/spr_pirata_hitbox/spr_pirata_hitbox.yy",},"resourceVersion":"1.0","name":"bdc08417-fb86-42e8-b866-2800801ab230","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_pirata_azul_quieto","path":"sprites/spr_pirata_azul_quieto/spr_pirata_azul_quieto.yy",},
+    "spriteId": {"name":"spr_pirata_hitbox","path":"sprites/spr_pirata_hitbox/spr_pirata_hitbox.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"721bec45-7329-4cf8-8a0b-4f78432336cf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"106be474-c575-4473-8981-c034fc3325d9","path":"sprites/spr_pirata_azul_quieto/spr_pirata_azul_quieto.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9b350f9b-4139-4dd4-8b72-4dc830fea054","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bdc08417-fb86-42e8-b866-2800801ab230","path":"sprites/spr_pirata_hitbox/spr_pirata_hitbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 24,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_pirata_azul_quieto","path":"sprites/spr_pirata_azul_quieto/spr_pirata_azul_quieto.yy",},
+    "parent": {"name":"spr_pirata_hitbox","path":"sprites/spr_pirata_hitbox/spr_pirata_hitbox.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_pirata_azul_quieto",
+    "name": "spr_pirata_hitbox",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0be33509-9a0d-4021-ae36-f7aab88eb62f","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2cc2a946-0ce5-490a-9f37-9247862ee5ed","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_pirata_azul_quieto",
+  "name": "spr_pirata_hitbox",
   "tags": [],
   "resourceType": "GMSprite",
 }
