@@ -4,6 +4,7 @@ if (room == rom_nivel) {
 	createPlayer(obj_spawner.x-16, obj_spawner.y, d_wasd);
 	createPlayer(obj_spawner.x+16, obj_spawner.y, d_arrows);
 }
+
 if (room == rom_menu){
 	ds_list_clear(global.lista_items_juego)
 	var lista = (global.lista_items_juego)

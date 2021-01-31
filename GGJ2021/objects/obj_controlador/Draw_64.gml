@@ -2,7 +2,7 @@
 
 if (room == rom_nivel) {
 	with(obj_player) {
-		var xs = (player = 1) ? 0 : other.gui_width/2
+		var xs = (player = 1) ? 0 : other.gui_width/2;
 		
 		draw_sprite(spr_gui_border, 0, xs, 0);
 		

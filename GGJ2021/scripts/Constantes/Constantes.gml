@@ -1,11 +1,10 @@
 // Los recursos de Script han cambiado para la v2.3.0 Consulta
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para más información
 
-global.lista_items=ds_list_create();
+global.lista_items = ds_list_create();
 ds_list_add(global.lista_items, 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);
 
 global.lista_items_juego = ds_list_create();
-
 
 #macro item_noEsta 0
 #macro item_siEsta 1

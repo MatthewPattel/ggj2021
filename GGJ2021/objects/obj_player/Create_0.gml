@@ -10,7 +10,7 @@ camy = y;
 // Inputs
 input = new inputPlayer(d_wasd);
 
-vel = 1;
+vel = 2;
 velh = 0;
 velv = 0;
 
@@ -147,5 +147,5 @@ mapaRellenar= function() {
 			s++;
 		}
 	}
-	ds_list_destroy(lista)
+	ds_list_destroy(lista);
 }
