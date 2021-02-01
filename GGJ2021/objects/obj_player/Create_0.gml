@@ -14,42 +14,40 @@ vel = 2;
 velh = 0;
 velv = 0;
 
+roboActivo = false;
+
 mapa = ds_grid_create(3, 3);
 
 spriteQuieto = spr_pirata_rojo_quieto;
 spriteCorrer = spr_pirata_rojo_correr;
 
-playerDibujarRobo = function() {
-	
-}
-
 playerRobar = function(pid) {
-var robo = false
-
-
-for (var yy = 0 ; yy < 3 ; yy++) {
+	for (var yy = 0 ; yy < 3 ; yy++) {
 		for (var xx = 0 ; xx < 3 ; xx++) {
-			if (!mapa[# xx, yy].robado){
-			if(robo = false){
-			
-			var sp = mapa[# xx, yy].sprite;
-			var se = mapa[# xx, yy].encontrado
-			
-			if (!se){
-			
-			if (pid.mapaItemEnMapa(sp) = item_encontrado){
-			mapaActualizar(sp)
-			pid.mapaBorrar(sp)
-			var se = mapa[# xx, yy].robado = true
-			robo = true
+			if (!mapa[# xx, yy].robado) {
+				if(!roboActivo) {
+					var sp = mapa[# xx, yy].sprite;
+					var se = mapa[# xx, yy].encontrado;
+					
+					if (!se) {
+						if (pid.mapaItemEnMapa(sp) = item_encontrado) {
+							mapaActualizar(sp);
+							pid.mapaBorrar(sp);
+							var se = mapa[# xx, yy].robado = true;
+							
+							var sw = instance_create_depth(x, y, -y-8, obj_sword);
+							sw.direction = point_direction(x, y, pid.x, pid.y);
+							sw.image_xscale = image_xscale;
+							
+							var sw = instance_create_depth(pid.x, pid.y, -y-8, obj_sword);
+							sw.direction = point_direction(pid.x, pid.y, x, y);
+							sw.image_xscale = pid.image_xscale;
+						}
+					}
+				}
 			}
-			}
-			}
-			}
-			
 		}
 	}
-
 }
 
 

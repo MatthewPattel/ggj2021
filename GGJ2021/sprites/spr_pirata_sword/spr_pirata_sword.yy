@@ -2,7 +2,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 4,
+  "origin": 9,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ce808eb7-3c30-4d4b-b1cb-7e3c6c136128","path":"sprites/spr_pirate_sword/spr_pirate_sword.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ce808eb7-3c30-4d4b-b1cb-7e3c6c136128","path":"sprites/spr_pirate_sword/spr_pirate_sword.yy",},"LayerId":{"name":"7a8c5614-f806-4c55-a55f-32c6eeb87cdb","path":"sprites/spr_pirate_sword/spr_pirate_sword.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pirate_sword","path":"sprites/spr_pirate_sword/spr_pirate_sword.yy",},"resourceVersion":"1.0","name":"ce808eb7-3c30-4d4b-b1cb-7e3c6c136128","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ce808eb7-3c30-4d4b-b1cb-7e3c6c136128","path":"sprites/spr_pirata_sword/spr_pirata_sword.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ce808eb7-3c30-4d4b-b1cb-7e3c6c136128","path":"sprites/spr_pirata_sword/spr_pirata_sword.yy",},"LayerId":{"name":"7a8c5614-f806-4c55-a55f-32c6eeb87cdb","path":"sprites/spr_pirata_sword/spr_pirata_sword.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_pirata_sword","path":"sprites/spr_pirata_sword/spr_pirata_sword.yy",},"resourceVersion":"1.0","name":"ce808eb7-3c30-4d4b-b1cb-7e3c6c136128","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_pirate_sword","path":"sprites/spr_pirate_sword/spr_pirate_sword.yy",},
+    "spriteId": {"name":"spr_pirata_sword","path":"sprites/spr_pirata_sword/spr_pirata_sword.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3145eb43-85f3-4f94-859a-34c12c9310bf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ce808eb7-3c30-4d4b-b1cb-7e3c6c136128","path":"sprites/spr_pirate_sword/spr_pirate_sword.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3145eb43-85f3-4f94-859a-34c12c9310bf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ce808eb7-3c30-4d4b-b1cb-7e3c6c136128","path":"sprites/spr_pirata_sword/spr_pirata_sword.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -55,12 +55,12 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 16,
-    "yorigin": 16,
+    "yorigin": 24,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_pirate_sword","path":"sprites/spr_pirate_sword/spr_pirate_sword.yy",},
+    "parent": {"name":"spr_pirata_sword","path":"sprites/spr_pirata_sword/spr_pirata_sword.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_pirate_sword",
+    "name": "spr_pirata_sword",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -72,7 +72,7 @@
     "path": "GGJ2021.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "spr_pirate_sword",
+  "name": "spr_pirata_sword",
   "tags": [],
   "resourceType": "GMSprite",
 }
